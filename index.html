@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập a: <input id = "a" oninput="display()">
+Nhập b: <input id = "b" oninput="display()">
+<h1 id="result"></h1>
+<script>
+    let a = document.getElementById("a");
+    let b = document.getElementById("b");
+    function display() {
+        if (+a.value % +b.value === 0) {
+            document.getElementById("result").innerText = a.value + " chia hết cho " + b.value;
+        }
+        else {
+            document.getElementById("result").innerText = a.value + " không chia hết cho " + b.value;
+        }
+    }
+</script>
+</body>
+</html>
